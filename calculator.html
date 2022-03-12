@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div class="content">
+        <div class="headings">
+            <h2 class="ml-2">CASIO</h2>
+            <div class="clock-display"></div><br>
+            <i class="ml-3 italics">fx-991ES PLUS</i><br>
+            <i class="text-success ml-2 italics">natural-V.P.A.M</i>
+            <strong class="ml-5 mb-3">Two way power</strong>
+            <div class="screen w-75 shadow-lg" id="screen"></div>
+            <input type="text" class="ml-5">
+        </div>
+        <div class="commands d-flex p-3">
+            <div class="shift">
+                <span class="text-success">SHIFT</span>
+                <button class="btn bn"><img src="/images/command button.PNG" alt="" class="imgs"></button>
+            </div>
+            <div class="alpha mt-2 ml-1">
+                <span class="text-danger">ALPHA</span>
+                <button class="btn bn"><img src="/images/command button.PNG" alt="" class="imgs"></button>
+            </div>
+            <button class="replay text-light">replay</button>
+            <div class="mode mt-2 ml-2">
+                <span>MODE<span class="text-success">SETUP</span></span>
+                <button class="btn bn"><img src="/images/command button.PNG" alt="" class="imgs"></button>
+            </div>
+            <div class="on">
+                <span>ON</span>
+                <button class="btn bn"><img src="/images/command button.PNG" alt="" class="imgs"></button>
+            </div>
+        </div>
+        <div class="btns row mb-5">
+            <div class="jet1">
+                <span class="text-warning">SOLVE <span class="text-danger">=</span></span><br>
+                <button class="btn btn-dark">CALC</button>
+            </div>
+            <div class="jet2">
+                <span class="text-warning">x!</span><br>
+                <button class="btn btn-dark">∫<sup>□</sup><sub>□</sub>▪</button>
+            </div>
+            <div class="jet3">
+                <span class="text-warning">SOLVE <span class="text-danger">=</span></span><br>
+                <button class="btn btn-dark">x<sup>-1</sup></button>
+            </div>
+            <div class="jet4">
+                <span class="text-warning">SOLVE <span class="text-danger">=</span></span><br>
+                <button class="btn btn-dark">log<sub>▪</sub>□</button>
+            </div>
+        </div>
+        <div class="buttons p-2">
+            <div class="bn-c1 d-flex">
+                <div class="press">
+                    <span class="text-warning">▪□/□</span><br>
+                    <button class="btn btn-dark">▪/□</button>
+                </div>
+                <div class="press">
+                    <span class="text-warning"><sup>3</sup>√▪</span><br>
+                    <button class="btn btn-dark">√□</button>
+                </div>
+                <div class="press">
+                    <span class="text-warning">x<sup>3</sup> <span class="text-info">DEC</span></span><br>
+
+                    <button class="btn btn-dark">x<sup>2</sup></button>
+                </div>
+
+                <div class="press">
+                    <span class="text-warning">▪√□</span><span class="text-info">HEX</span><br>
+                    <button class="btn btn-dark">x<sup>▪</sup></button>
+                </div>
+
+                <div class="press">
+                    <span class="text-warning">10<sup>□</sup><span class="text-info">BIN</span> </span><br>
+                    <button class="btn btn-dark">log</button>
+                </div>
+                <div class="press">
+                    <span class="text-warning">10<sup>□</sup><span class="text-info">BIN</span> </span><br>
+                    <button class="btn btn-dark">In</button>
+                </div>
+            </div>
+            <div class="bn-c2 d-flex">
+                <div class="press">
+                    <span class="text-info">[<sup class="warning">
+                            <</sup>]</span><span class="text-info">[<sup class="text-danger">A</sup>]</span><br>
+                    <button class="btn btn-dark">(─)</button>
+                </div>
+                <div class="press">
+                    <span class="text-warning">←<span class="text-info">[<sup
+                                class="text-danger">B</sup>]</span></span><br>
+                    <button class="btn btn-dark"><sup style="font-size: 3vh;">.,,,</sup></button>
+                </div>
+                <div class="press">
+                    <span class="text-warning">Abs<span class="text-info">[<sup
+                                class="text-danger">C</sup></span></span><br>
+                    <button class="btn btn-dark">hyp</button>
+                </div>
+                <div class="press">
+                    <span class="text-warning">sin<sup>-1</sup><span class="text-info">[ <sup
+                                class="text-danger">D</sup>]</span></span><br>
+                    <button class="btn btn-dark">sin</button>
+                </div>
+                <div class="press">
+                    <span class="text-warning">cos<sup>-1</sup><span class="text-info">[ <sup
+                                class="text-danger">E</sup>]</span></span><br>
+                    <button class="btn btn-dark">cos</button>
+                </div>
+                <div class="press">
+                    <span class="text-warning">tan<sup>-1</sup><span class="text-info">[ <sup
+                                class="text-danger">F</sup>]</span></span><br>
+                    <button class="btn btn-dark">tan</button>
+                </div>
+            </div>
+            <div class="bn-c3 d-flex">
+                <div class="press">
+                    <span class="text-warning">STO</span><br>
+                    <button class="btn btn-dark">RCL</button>
+                </div>
+                <div class="press">
+                    <span class="text-warning">← <span class="text-info">[<sup
+                                class="text-danger">i</sup>]</span></span><br>
+                    <button class="btn btn-dark">ENG</button>
+                </div>
+                <div class="press">
+                    <span class="text-warning">%</span><br>
+                    <button class="btn btn-dark">(</button>
+                </div>
+                <div class="press">
+                    <span class="text-warning">,<span class="text-danger">X</span></span><br>
+                    <button class="btn btn-dark">)</button>
+                </div>
+                <div class="press">
+                    <span class="text-warning">ab/c</span> <span class="text-danger">Y</span><br>
+                    <button class="btn btn-dark">S↔D</button>
+                </div>
+                <div class="press">
+                    <span class="text-warning">M- <span class="text-danger">M</span></span><br>
+                    <button class="btn btn-dark">M+</button>
+                </div>
+            </div>
+        </div>
+        <div class="bt-r1 d-flex pl-2 ml-2">
+            <div class="const">
+                <span class="text-warning pl-2">CONST</span>
+                <button class="btn btn-light">7</button>
+            </div>
+            <div class="conv">
+                <span class="text-warning pl-2">CONV</span>
+                <button class="btn btn-light">8</button>
+            </div>
+            <div class="clr">
+                <span class="text-warning pl-2">CLR</span>
+                <button class="btn btn-light">9</button>
+            </div>
+            <div class="ins">
+                <span class="text-warning pl-2">INS</span>
+                <button class="btn btn-light">DEL</button>
+            </div>
+            <div class="off">
+                <span class="pl-2 text-warning pl-2">OFF</span>
+                <button class="btn btn-light">AC</button>
+            </div>
+        </div>
+        <div class="bt-r2 d-flex pl-2 ml-2">
+            <div class="matrix">
+                <span class="pl-2">[<sup class="text-warning">MATRIX</sup>]</span>
+                <button class="btn btn-light">4</button>
+            </div>
+            <div class="vector">
+                <span class="pl-2">[<sup class="text-warning">VECTOR</sup>]</span>
+                <button class="btn btn-light">5</button>
+            </div>
+            <div class="six">
+                <span class="disable pl-2">good</span>
+                <button class="btn btn-light mr-3">6</button>
+            </div>
+            <div class="npr">
+                <span class="text-warning pl-2">nPr</span>
+                <button class="btn btn-light mr-2">X</button>
+            </div>
+            <div class="ncr">
+                <span class="pl-2 text-warning pl-2">nCr</span>
+                <button class="btn btn-light mr-3">÷</button>
+            </div>
+        </div>
+        <div class="bt-r3 d-flex pl-2">
+            <div class="stat">
+                <span class="pl-2">[<span class="text-warning">STAT</span>]</span>
+                <button class="btn btn-light">1</button>
+            </div>
+            <div class="cmplx ml-2">
+                <span id="cmplx pl-2">[<span class="text-warning">CMPLX</span>]</span>
+                <button class="btn btn-light">2</button>
+            </div>
+            <div class="base">
+                <span class="text-info pl-2">[<span class="text-warning">BASE</span>]</span>
+                <button class="btn btn-light">3</button>
+            </div>
+            <div class="pol">
+                <span class="text-warning pl-2">Pol</span>
+                <button class="btn btn-light">+</button>
+            </div>
+            <div class="rec mr-3 ml-2">
+                <span class="text-warning pl-2">Rec</span>
+                <button class="btn btn-light">-</button>
+            </div>
+        </div>
+        <div class="bt-r4 d-flex pl-2 ml-2">
+            <div class="rnd">
+                <span class="text-warning pl-2">Rnd</span>
+                <button class="btn btn-light" onclick="show()" id="zero">0</button>
+            </div>
+            <div class="ran ml-3">
+                <span class="text-warning pl-2">Ran#<span class="text-danger">RanInt</span></span>
+                <button class="btn btn-light">.</button>
+            </div>
+            <div class="pie mr-3">
+                <span class="text-warning pl-2">π<span class="text-danger">e</span></span>
+                <button class="btn btn-light">x10<sup>x</sup></button>
+            </div>
+            <div class="drg mr-2">
+                <span class="text-warning pl-2">DRG></span>
+                <button class="btn btn-light">ANS</button>
+            </div>
+            <div class="equals mt-4 mr-3">
+                <button class="btn btn-light">=</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

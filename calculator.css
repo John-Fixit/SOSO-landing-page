@@ -1,0 +1,119 @@
+
+.content{
+    border-radius: 1vh;
+    border: 1px solid;
+    width: 80mm;
+    margin-left: 2vh;
+    background: #CDCCD1;
+    position: relative;
+}
+.clock-display{
+    border: thin solid;
+    height: 6vh;
+    width: 20vh;
+    margin: -4vh 20vh;
+    border-radius: 1vh;
+    background: #FFD966;
+    border: none;
+}
+.screen{
+    /* border: thin solid; */
+    height: 10vh;
+    margin: auto;
+    width: 38vh !important;
+    border-radius: 1vh;
+    background: #fff;
+}
+input{
+    border: none;
+    margin-top: 4px;
+    outline: none;
+}
+span{
+    font-size: 10px;
+}
+.commands{
+    /* border: thin solid red; */
+    height: 18vh;
+    position: relative;
+        border-top-right-radius: 4vh;
+        border-top-left-radius: 4vh;
+        border-bottom-left-radius: 4vh;
+        border-bottom-right-radius: 4vh;
+}
+.bn{
+    border-top-right-radius: 4vh;
+    border-top-left-radius: 4vh;
+    border-bottom-left-radius: 4vh;
+    border-bottom-right-radius: 4vh;
+}
+.replay{
+border: 1px solid;
+height: 9vh;
+width: 12vh;
+border-radius: 50%;
+margin-top: 5vh;
+background: #797395;
+}
+.btn-dark{
+    /* border: thin solid red; */
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
+    border-bottom-left-radius: 1.7vh;
+    border-bottom-right-radius: 1.7vh;
+}
+.btns{
+    margin-top: -6vh;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    margin-left: 1.4vh;
+}
+.jet2{
+margin-left: 2vh;
+}
+.jet3{
+margin-left: 13vh;
+}
+.jet4{
+margin-left: 2vh;
+}
+.btn{
+    width: 6vh;
+    padding: 0vh;
+}
+.imgs{
+    /* border: thin solid red;  */
+    width: 6vh;
+}
+#cmplx{
+    color: blueviolet;
+}
+.disable{
+    display: none;
+}
+.six{
+    margin-top: 3.4vh;
+}
+.bn-c1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bn-c2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bn-c3{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bt-r3{
+    margin-left: 1.5vh;
+}
+@media only screen and (max-width=567px){
+    .content{
+        margin: 0vh 0vh;
+        overflow: hidden;
+        margin-left: 5vh;
+    }
+}

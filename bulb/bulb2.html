@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buld</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+<style>
+    .bulboff {
+        margin: 4vh 70vh;
+        width: 30vh;
+        overflow: hidden;
+    }
+
+    .btn-success {
+        margin: 4vh 73vh;
+    }
+
+    .btn-danger {
+        margin: 0vh -65vh;
+    }
+</style>
+
+<body>
+    <img src="/bulboff.gif" alt="" id="answer" class="bulboff"><br>
+    <input type="button" value="ON" class="btn btn-success" onclick="on()" id="up">
+    <!-- <button class="btn btn-danger" onclick="off()">OFF</button> -->
+</body>
+
+<script>
+function on() {
+  if (up.value=="ON") {
+answer.src="bulbon.gif"
+up.value="OFF"
+  }
+
+  else{
+      answer.src="bulboff.gif"
+      up.value="ON"
+    }
+    //   else if(up.value=="OFF") {
+    // answer.src="bulboff.gif"
+    // up.value="ON"
+//   }
+}
+
+
+
+
+
+    // function on() {
+    // answer.src ="bulbon.gif"
+    // // document.getElementById("answer").src ="bulbon.gif";
+    // }
+    // function off() {
+    // answer.src ="bulboff.gif"
+    // }
+</script>
+
+</html>

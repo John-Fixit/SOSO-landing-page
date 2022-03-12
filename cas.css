@@ -1,0 +1,86 @@
+.contents{
+    border-radius: 1vh;
+    border: 1px solid;
+    width: 80mm;
+    margin: 0vh 5vh;
+    background: #CDCCD1;
+    position: relative;
+}
+.clock-display{
+    border: thin solid;
+    height: 6vh;
+    width: 20vh;
+    margin: -4vh 20vh;
+    border-radius: 1vh;
+    background: #fff;
+}
+.screen{
+    border: thin solid;
+    height: 10vh;
+    margin: auto;
+    width: 38vh !important;
+    border-radius: 1vh;
+    background: #fff;
+}
+span{
+    font-size: 10px;
+}
+.command{
+    /* border: thin solid red; */
+    height: 18vh;
+    position: relative;
+}
+.btns{
+    margin-top: -6vh;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    margin-left: 2vh;
+}
+.jet2{
+margin-left: 2vh;
+}
+.jet3{
+margin-left: 13vh;
+}
+.jet4{
+margin-left: 2vh;
+}
+.btn{
+    width: 6vh;
+    padding: 0vh;
+}
+img{
+    /* border: thin solid red; */
+    width: 6vh;
+}
+#cmplx{
+    color: blueviolet;
+}
+.disable{
+    display: none;
+}
+.six{
+    margin-top: 3.4vh;
+}
+.bn-c1{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bn-c2{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bn-c3{
+    display: flex;
+    justify-content: space-evenly;
+}
+.bt-r3{
+    margin-left: 1.5vh;
+}
+.cover{
+    height: 162mm;
+    border-bottom-left-radius: 5vh;
+    border-bottom-right-radius: 5vh;
+   
+}

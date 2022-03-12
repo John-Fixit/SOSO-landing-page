@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+<style>
+   
+</style>
+
+<body>
+<img src="/bulboff.gif" alt="" id="turn" class="w-25"><br>
+<!-- <button class="btn btn-success" value="ON" onclick="on()" id="down">ON</button> -->
+<input type="button" value="ON" id="up" onclick="on()" class="bg-success ml-5" style="width: 7vh;">
+<!-- <button class="btn btn-success" onclick="off()">OFF</button> -->
+</body>
+<script>
+function on() {
+ if(up.value=="ON") {
+    turn.src="bulbon.gif"
+    up.value="OFF"
+  }
+  else {
+    turn.src="bulboff.gif"
+    up.value="ON"
+  }
+}
+// function on(){
+//   turn.src="bulbon.gif"
+// }
+// function off(){
+//   turn.src="bulboff.gif"
+// }
+</script>
+</html>
